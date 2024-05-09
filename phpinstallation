@@ -1,0 +1,25 @@
+on mac
+
+
+- install HomeBrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Once Homebrew is installed, you can update PHP by running:
+
+brew update
+brew install php
+
+Install a Local Server:
+You can use MAMP (free version available) which simplifies the setup of Apache, MySQL, and PHP. Download it from https://www.mamp.info and follow the installation instructions.
+Configure Document Root:
+By default, MAMP sets the document root to /Applications/MAMP/htdocs. You can place your PHP project there or configure a new document root through MAMP’s preferences to point to your project’s directory.
+Start the Server:
+Open MAMP and start the servers. MAMP will then start Apache and MySQL.
+Run Your PHP Project:
+Open a web browser and go to http://localhost:8888 if you are using the default MAMP ports. If your project is in a subfolder, append the folder name to the URL (e.g., http://localhost:8888/yourprojectfolder).
+Database (if needed):
+If your project requires a database, use MAMP's built-in phpMyAdmin to manage your MySQL databases. You can access it at http://localhost:8888/phpMyAdmin.
+Additional Configuration:
+If you need to edit php.ini, you can find it inside the /Applications/MAMP/bin/php/php[version]/conf/php.ini, where [version] is your PHP version.
+
+
